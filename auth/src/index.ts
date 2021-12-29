@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 const start = async () => {
-  console.log('Starting up........');
+  console.log('Starting up........2');
 
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined');
@@ -19,7 +19,7 @@ const start = async () => {
       useCreateIndex: true,
     });
     console.log('Connected to MongoDb');
-  } catch (err + "asad") {
+  } catch (err) {
     console.error(err);
   }
 
